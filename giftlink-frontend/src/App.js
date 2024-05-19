@@ -1,8 +1,6 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom'; // Remove useNavigate
+import { Routes, Route } from 'react-router-dom';
 import MainPage from './components/MainPage/MainPage';
-import LoginPage from './components/LoginPage/LoginPage'; // Remove LoginPage if not used
-import RegisterPage from './components/RegisterPage/RegisterPage'; // Remove RegisterPage if not used
 import DetailsPage from './components/DetailsPage/DetailsPage';
 import SearchPage from './components/SearchPage/SearchPage';
 import Profile from './components/Profile/Profile';
@@ -11,8 +9,6 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 
 function App() {
-  // useNavigate can be removed if not used
-  
   return (
     <>
       <Navbar/>
