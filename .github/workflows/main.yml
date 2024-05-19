@@ -1,5 +1,4 @@
-/*jshint esversion: 8 */
-name: 'CI/CD'
+name: CI/CD
 
 on:
   push:
@@ -9,10 +8,10 @@ on:
 
 jobs:
   lint_js:
-      name: Lint JavaScript Files
-      runs-on: ubuntu-latest
+    name: Lint JavaScript Files
+    runs-on: ubuntu-latest
 
-      steps:
+    steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
@@ -34,10 +33,10 @@ jobs:
           echo "Linted all the js files successfully"
 
   client_build:
-      name: Build client
-      runs-on: ubuntu-latest
+    name: Build client
+    runs-on: ubuntu-latest
 
-      steps:
+    steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
